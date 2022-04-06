@@ -1,0 +1,27 @@
+.box{
+    border-style:solid;
+    border-color: black;
+    box-sizing: border-box;
+    height: 200px;
+    width:40%;
+    float: left;
+    column-gap: 25px;
+    margin-right: 25px;
+    margin-left: 35px;
+    padding-top: 10px ;
+
+
+}
+.entry{
+    border-top-style: hidden;
+    background-color: aqua;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    outline:none
+
+
+}
+.col{
+    column-count: 2;
+    column-gap: 5px;
+}
