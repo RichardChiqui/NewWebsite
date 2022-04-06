@@ -1,6 +1,8 @@
-const item = document.querySelector("input")
+const item = document.querySelector("button")
 
 item.addEventListener('click',e=>{
-    thing = e
+    const val = document.querySelector("input").value
+    whatbutton = item.id
+    document.getElementById("item").innerText = val;
+
 })
-console.log(thing)
