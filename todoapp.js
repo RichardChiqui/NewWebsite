@@ -1,20 +1,20 @@
-const item = document.querySelector("button")
-const item2 = document.getElementById("1")
+const buttonclicked = document.querySelector("button")
+const keypressed = document.getElementById("AddItem")
 
-item.addEventListener('click',e=>{
-    const val = document.getElementById("1").value
-    const due = document.getElementById("2").value
+buttonclicked.addEventListener('click',e=>{
+    const ToBeAdded = document.getElementById("AddItem").value
+    const due = document.getElementById("DueDate").value
     whatbutton = item.id
-    alert(val)
+
     document.getElementById("item").innerText = val;
 
 })
-item2.addEventListener('keydown',e=>{
+keypressed.addEventListener('keydown',e=>{
     if(e.code === "Enter"){
-        const val = document.getElementById("1").value
-    const due = document.getElementById("2").value
+    const val = document.getElementById("AddItem").value
+    const due = document.getElementById("DueDate").value
     whatbutton = item.id
-    alert(val)
+
     document.getElementById("item").innerText = val;
     }
 
