@@ -24,7 +24,7 @@
 
 
 }
-.col{
+.colOutput{
     column-count: 2;
-    column-gap: 5px;
+    column-rule: 1px solid lightblue;
 }

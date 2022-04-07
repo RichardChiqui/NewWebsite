@@ -5,7 +5,7 @@ buttonclicked.addEventListener('click',e=>{
     const ToBeAdded = document.getElementById("AddItem").value
     const due = document.getElementById("DueDate").value
 
-    var tag = document.createElement("span");
+    var tag = document.createElement("p");
     var text = document.createTextNode(ToBeAdded);
     tag.appendChild(text);
     var element = document.getElementById("List");
