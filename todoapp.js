@@ -1,21 +1,24 @@
-const buttonclicked = document.querySelector("button")
-const keypressed = document.getElementById("AddItem")
+var buttonclicked = document.querySelector("button")
+var keypressed = document.querySelector("input")
 
 buttonclicked.addEventListener('click',e=>{
     const ToBeAdded = document.getElementById("AddItem").value
     const due = document.getElementById("DueDate").value
-    whatbutton = item.id
 
-    document.getElementById("item").innerText = val;
+    var tag = document.createElement("span");
+    var text = document.createTextNode(ToBeAdded);
+    tag.appendChild(text);
+    var element = document.getElementById("List");
+    element.appendChild(tag);
+
+
 
 })
-keypressed.addEventListener('keydown',e=>{
-    if(e.code === "Enter"){
-    const val = document.getElementById("AddItem").value
-    const due = document.getElementById("DueDate").value
-    whatbutton = item.id
+keypressed.addEventListener('keyup',e=>{
 
-    document.getElementById("item").innerText = val;
+    if(e.key === "Enter"){
+        buttonclicked.click()
+
     }
 
 
