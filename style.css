@@ -1,16 +1,32 @@
-.box{
+.boxInput{
     border-style:solid;
     border-color: black;
     box-sizing: border-box;
-    height: 200px;
-    width:40%;
-    float: left;
-    column-gap: 25px;
+    height: 5%;
+    width:80%;
     margin-right: 25px;
     margin-left: 35px;
     padding-top: 10px ;
 
 
+}
+.boxOutput{
+    border-style:solid;
+    border-color: black;
+    box-sizing: border-box;
+    height: 200px;
+    width:40%;
+    margin-right: 25px;
+    margin-left: 35px;
+    padding-top: 10px ;
+
+
+}
+
+#im{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/494/734/437/amazing-galaxy-mac-ox-scientific-planet-space-stars-ultrahd-4k-wallpaper-thumb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -24,7 +40,23 @@
 
 
 }
-.colOutput{
-    column-count: 2;
-    column-rule: 1px solid lightblue;
-}
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+  .left {
+    width: 25%;
+  }
+
+  .right {
+    width: 75%;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
