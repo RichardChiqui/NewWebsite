@@ -3,6 +3,7 @@ margin-bottom: 50px;
 border-style: solid;
 height: 75px;
 box-sizing: border-box;
+border-color: black;
 
 
 
@@ -11,11 +12,10 @@ box-sizing: border-box;
     border-style:solid;
     border-color: black;
     box-sizing: border-box;
-    height: 200px;
-    width:40%;
-    margin-right: 25px;
-    margin-left: 35px;
-    padding-top: 250px ;
+    height: 150px;
+    width:1000px;
+
+
 
 
 }
@@ -30,9 +30,10 @@ box-sizing: border-box;
 
 .entry{
     border-top-style: hidden;
-    background-color: aqua;
+    background-color: hsl(348, 100%, 61%);
     border-right-style: hidden;
     border-left-style: hidden;
+    border-color: black;
     outline:none
 
 
