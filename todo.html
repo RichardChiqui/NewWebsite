@@ -20,28 +20,37 @@
     </section>
 
 
-    <div class="boxInput">
+    <div class="boxInput ">
         <div class="columns">
-           <div class="column" style="background-color: blue;">
-        <p>
-            <label>Item to do:</label>
-             <input id="AddItem" class="entry" type="text">
-        </p>
+           <div class="column is-half" style="height: 45px">
+        <div class="field">
+          <div class="field-label">
+              <label class="label" style="text-align:center;">Item to do:</label>
+          </div>
+          <div class="field-body">
+              <input id="AddItem" class="entry" type="text" style="width: 700px;">
+          </div>
+            </div>
         </div>
-       <p>
-           <div class="column"style="background-color: blue;">
+           <div class="column is-one-third"style="height: 60px;">
 
-           <label>When is it due:</label>
-            <input id="DueDate" class="entry" type="text">
-       </p>
+
+            <div class="field">
+                <div class="field-label">
+                    <label class="label" style="text-align:center;">Item to do:</label>
+                </div>
+                <div class="field-body">
+                    <input id="AddItem" class="entry" type="text" style="width: 700px;">
+                </div>
+                  </div>
        </div>
-          <div class="column"style="background-color: blue;">
-              <button id="Manual" type="button" style="background-color: bisque; margin-left: 200px;">Enter todo list</button>
+          <div class="column is-one-fifth"style="height:60px">
+              <button id="Manual" type="button" style="background-color: bisque; margin-left: 50px;">Enter todo list</button>
           </div>
        </div>
-
-
     </div>
+
+
     <div class="boxOutput" style="column-count: 2; column-rule: 1px solid lightblue;" id="List">
         <label style="padding-left: 10px;">
             To-do List: <span id="item">
