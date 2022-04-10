@@ -22,10 +22,15 @@ border-color: black;
 li{
     list-style-type:none;
     text-align: justify;
+    height: 40px;
+
 
 }
 li:nth-child(odd) {
     background:#D3D3D3;
+  }
+  li:hover {
+    background:grey;
   }
 
 #im{

@@ -29,17 +29,13 @@ function AddTo(test){
     if(due == null){
         due = ""
     }
-
+    var finaltext = itemVal + " " + due
     var tagDue = document.createElement("li");
-    var textDue = document.createTextNode(due);
+    var textDue = document.createTextNode(finaltext);
     tagDue.appendChild(textDue);
-    var element = document.getElementById("ListDue");
-    element.appendChild(tagDue);
 
-    var tagItem = document.createElement("li");
-    var textItem = document.createTextNode(itemVal);
-    tagItem.appendChild(textItem);
+
     var element = document.getElementById("List");
-    element.appendChild(tagItem);
+    element.appendChild(tagDue);
 
 }
