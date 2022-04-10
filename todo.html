@@ -11,16 +11,16 @@
 </head>
 
 <bodys>
-    <section class="hero is-primary">
+    <section class="hero is-info is-small">
         <div class="hero-body">
-            <h1  style="text-align:center;text-decoration:underline;font-size: 40px; color: black;">
+            <h1  style="text-align:center;font-size: 40px; color: white">
         To-Do App
     </h1>
         </div>
     </section>
 
-<section class="hero is-danger">
-    <div class="hero-body" style="height: 200px;">
+<section class="hero is-info is-small">
+    <div class="hero-body" style="height: 120px;">
         <div class="boxInput ">
         <div class="columns">
            <div class="column is-half" style="height: 45px">
@@ -29,7 +29,7 @@
               <label class="label" style="text-align:center;">Item to do:</label>
           </div>
           <div class="field-body">
-              <input id="AddItem" class="entry" type="text" style="width: 700px;">
+              <input id="AddItem" class="input is-small" placeholder="Add Item" type="text" style="width: 500px;color: black;">
           </div>
             </div>
         </div>
@@ -38,15 +38,15 @@
 
             <div class="field">
                 <div class="field-label">
-                    <label class="label" style="text-align:center;">Item to do:</label>
+                    <label class="label" style="text-align:center;">Due Date</label>
                 </div>
                 <div class="field-body">
-                    <input id="AddItem" class="entry" type="text" style="width: 700px;">
+                    <input id="DueDate" class="input is-small" placeholder="Due Date (optional)"type="text" style="width: 500px;">
                 </div>
                   </div>
        </div>
           <div class="column is-one-fifth"style="height:60px">
-              <button id="Manual" type="button" style="background-color: bisque; margin-left: 50px;">Enter todo list</button>
+              <button id="Manual" class="button is-small is-warning" style="margin-top: 23px;">Enter todo list</button>
           </div>
        </div>
     </div>
@@ -54,18 +54,15 @@
 
 </section>
 
-
 <section class="section">
     <div class="container">
-<div class="boxOutput" id="List">
+      <div class="boxOutput" id="List">
         <label style="padding-left: 10px;">
             To-do List: <ul>
 
+
             </ul>
-
-
         </label>
-
     </div>
     </div>
 </section>

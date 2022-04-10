@@ -2,6 +2,7 @@ var buttonclicked = document.querySelector("button")
 var keypressed = document.getElementById("AddItem")
 
 buttonclicked.addEventListener('click',e=>{
+
     const ToBeAdded = document.getElementById("AddItem").value
     const due = document.getElementById("DueDate").value
 

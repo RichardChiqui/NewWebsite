@@ -1,6 +1,6 @@
 .boxInput{
 margin-bottom: 50px;
-border-style: solid;
+
 height: 75px;
 box-sizing: border-box;
 border-color: black;
@@ -12,7 +12,7 @@ border-color: black;
     border-style:solid;
     border-color: black;
     box-sizing: border-box;
-    height: 150px;
+    height: 250px;
     width:1000px;
 
 
