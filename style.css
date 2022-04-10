@@ -19,9 +19,14 @@ border-color: black;
 
 
 }
-ul li{
+li{
     list-style-type:none;
+    text-align: justify;
+
 }
+li:nth-child(odd) {
+    background:#D3D3D3;
+  }
 
 #im{
     background-image: url("https://c4.wallpaperflare.com/wallpaper/494/734/437/amazing-galaxy-mac-ox-scientific-planet-space-stars-ultrahd-4k-wallpaper-thumb.jpg");

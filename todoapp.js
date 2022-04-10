@@ -32,9 +32,7 @@ function AddTo(test){
 
     var tagDue = document.createElement("li");
     var textDue = document.createTextNode(due);
-
     tagDue.appendChild(textDue);
-
     var element = document.getElementById("ListDue");
     element.appendChild(tagDue);
 
