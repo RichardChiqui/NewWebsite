@@ -21,16 +21,19 @@ border-color: black;
 }
 li{
     list-style-type:none;
-    text-align: justify;
+    text-align: center;
     height: 40px;
+
 
 
 }
 li:nth-child(odd) {
     background:#D3D3D3;
+    width:100%;
   }
   li:hover {
-    background:grey;
+    width:100%;
+    background:lightgrey;
   }
 
 #im{
@@ -51,3 +54,35 @@ li:nth-child(odd) {
 
 
 }
+
+
+
+#List{
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    margin-left: 13em;
+    text-align: center;
+  
+}
+
+#List li{
+    font-size: larger;
+    word-spacing: 7em;
+    text-align: center;
+    margin-right: 20px;
+    width: 66%;
+}
+#List ul{
+    margin-right: 10em;
+    width: 66%;
+}
+
+
+
+
+/* #item-textbox{
+    margin-left: 10px;
+    background-color: blue;
+} */

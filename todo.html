@@ -10,75 +10,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
-<bodys>
+<body>
     <section class="hero is-info is-small">
         <div class="hero-body">
-            <h1  style="text-align:center;font-size: 40px; color: white">
-        To-Do App
-    </h1>
+            <h1 style="text-align:center;font-size: 40px; color: white">
+                To-Do App
+            </h1>
         </div>
     </section>
 
-<section class="hero is-info is-small">
-    <div class="hero-body" style="height: 120px;">
-        <div class="boxInput ">
-        <div class="columns">
-           <div class="column is-half" style="height: 45px">
-        <div class="field">
-          <div class="field-label">
-              <label class="label" style="text-align:center;">Item to do:</label>
-          </div>
-          <div class="field-body">
-              <input id="AddItem" class="input is-small" placeholder="Add Item" type="text" style="width: 500px;color: black;">
-          </div>
+    <section class="hero is-info is-small">
+        <div class="hero-body" style="height: 120px;">
+            <div class="boxInput ">
+                <div class="columns">
+                    <div class="column is-half" style="height: 45px">
+                        <div class="field">
+                            <div class="field-label">
+                                <label  class="label" style="text-align:center;">Item to do:</label>
+                            </div>
+                            <div class="field-body">
+                                <input id="AddItem" class="input is-small" placeholder="Add Item" type="text" style="width: 500px;color: black; margin-left: 100px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third"style="height: 60px;">
+                        <div class="field">
+                            <div class="field-label">
+                                <label class="label" style="text-align:center;">Due Date</label>
+                            </div>
+                            <div class="field-body">
+                                <input id="DueDate" class="input is-small" placeholder="Due Date (optional)"type="text" style="width: 500px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-fifth"style="height:60px">
+                        <button id="Manual" class="button is-small is-warning" style="margin-top: 23px;">Enter todo list</button>
+                    </div>
+                </div>
             </div>
         </div>
-           <div class="column is-one-third"style="height: 60px;">
+    </section>
 
-
-            <div class="field">
-                <div class="field-label">
-                    <label class="label" style="text-align:center;">Due Date</label>
-                </div>
-                <div class="field-body">
-                    <input id="DueDate" class="input is-small" placeholder="Due Date (optional)"type="text" style="width: 500px;">
-                </div>
-                  </div>
-       </div>
-          <div class="column is-one-fifth"style="height:60px">
-              <button id="Manual" class="button is-small is-warning" style="margin-top: 23px;">Enter todo list</button>
-          </div>
-       </div>
+    <div class="outputs-section">
+        <div id="List" class="items" >
+            <ul>
+    
+            </ul>
+        </div>
+      
+    
+       
     </div>
-    </div>
-
-</section>
-
-
-
-          <div id="List" style="padding-left: 40px; word-spacing: 100px;">
-                  <ul>
-
-
-                  </ul>
-              </div>
-              </div>
-
-
-
-                <div id="ListDue">
-                    <ul>
-
-                    </ul>
-                </div>
-
-
-
-
-
-
-
-
+    
 
     <script src="todoapp.js"></script>
 </body>

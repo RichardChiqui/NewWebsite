@@ -8,6 +8,7 @@ Item.addEventListener('keydown',e=>{
 
     if(e.key === "Enter"){
        AddTo(0)
+     
     }
 })
 Due.addEventListener('keydown',e=>{
@@ -29,13 +30,28 @@ function AddTo(test){
     if(due == null){
         due = ""
     }
-    var finaltext = itemVal + " " + due
-    var tagDue = document.createElement("li");
-    var textDue = document.createTextNode(finaltext);
-    tagDue.appendChild(textDue);
+    var finaltext = itemVal + "   " + due
+    var tagText = document.createElement("li");
+    var textDueVal = document.createTextNode(finaltext);
+    tagText.appendChild(textDueVal);
+
+    const dueDate = due;
+    var tagDueDate = document.createElement("li");
+    var textDueDate = document.createTextNode(dueDate);
+    tagDueDate.appendChild(textDueDate);
+
 
 
     var element = document.getElementById("List");
-    element.appendChild(tagDue);
+    element.appendChild(tagText);
 
+
+    clearInput();
+  
 }
+
+function clearInput() {
+    document.getElementById("AddItem").value = "";
+    document.getElementById("DueDate").value = "";
+  }
+
